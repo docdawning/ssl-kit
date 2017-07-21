@@ -7,6 +7,9 @@ Note scripts that use the crt file depend on you having gone through the process
  1. Go through whatever the SSL/TLS vendor's process is and get your Certificate (CRT).
  1. Many users will be happy with their key and crt files. Some will need to combine the crt with bundled chained certs. There are various helper scripts that'll get you to convert the certificates to various formats.
 
+<h2>Disclaimer</h2>
+These are provided as-is. Hence, if they set your house on fire (etc), then I guess you did it to yourself? I use most of these scripts for my production context, but I can't guarantee anything. The MS-oriented ones I haven't really fully tested. I learn as I go. Good luck. ^_^ 
+
 <h2>makePrivateKey.sh</h2>
 Makes your private key. It only really needs to be called when you're first setting things up.
 
