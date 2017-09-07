@@ -10,6 +10,9 @@ Note scripts that use the crt file depend on you having gone through the process
 <h2>Disclaimer</h2>
 These are provided as-is. Hence, if they set your house on fire (etc), then I guess you did it to yourself? I use most of these scripts for my production context, but I can't guarantee anything. The MS-oriented ones I haven't really fully tested. I learn as I go. Good luck. ^_^ 
 
+<h2>makeSelfSignedSSLCertificate.sh</h2>
+This is a one-shot that'll make both a private key and a self-signed SSL certificate for you. This is nice because you can get SSL for free. But it sucks because it's self-signed SSL that will make most browsers have a minor panic-attack and send users running away. But, for development contexts, etc, it's handy to have. Use it like: <pre>./makeSelfSignedSSLCertificate.sh whiskeytangofoxtrot.net</pre>. This invokation would create <em>whiskeytangofoxtrot.net.key</em> and <em>whiskeytangofoxtrot.net.crt</em>
+
 <h2>makePrivateKey.sh</h2>
 Makes your private key. It only really needs to be called when you're first setting things up.
 
